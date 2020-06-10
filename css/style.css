@@ -51,6 +51,9 @@
 }
 
 /*  TESTTIMONIALS */
+.scroll-wrapper {
+  overflow: hidden;
+}
 .slider-control {
   position: absolute;
   right: 0;
@@ -78,6 +81,7 @@
 .scroll {
   width: 300vw;
   display: flex;
+  overflow: hidden;
   position: relative;
   animation: scroll both infinite 10s;
 }
