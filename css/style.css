@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/*  GENERAL */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*  FACILITIES */
+.section-headers {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2.5rem auto;
+  color: #80ced6;
+  font-family: monospace;
+  font-weight: bold;
+}
+.facilities-contents-wrapper {
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  height: 70vh;
+  background: url("../img/facilities.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+}
+.facilities-contents {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: white;
+}
+.fa-customize {
+  font-size: 4rem;
+}
+@media (max-width: 450px) {
+  .facilities-contents-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.3rem;
+  }
+  .facilities-contents {
+    font-size: 1rem;
+  }
+  .fa-customize {
+    font-size: 2rem;
+  }
+}
+
+/*  TESTTIMONIALS */
+.scroll-wrapper {
+  overflow: hidden;
+}
+.slider-control {
+  position: absolute;
+  right: 0;
+}
+.controller {
+  display: inline-block;
+  margin: 0 0.4rem;
+  text-decoration: rgb(172, 173, 173);
+}
+
+#profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.slider-content {
+  text-align: center;
+}
+.slider-content p {
+  margin: 0.5rem 20vw;
+}
+.scroll {
+  width: 300vw;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  animation: scroll both infinite 10s;
+}
+@keyframes scroll {
+  0% {
+    left: -100vw;
+  }
+  25% {
+    left: 0;
+  }
+  50% {
+    right: 100vw;
+  }
+  75% {
+    right: 200vw;
+  }
+  100% {
+    right: 0;
+  }
+}
