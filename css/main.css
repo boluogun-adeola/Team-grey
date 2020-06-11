@@ -1,0 +1,105 @@
+ @media (min-width: 1100px){
+    .container{
+            display: flex;
+            justify-content: center;
+            
+    }
+    
+ }
+/* General HTML */
+
+ body{
+     margin: 0;
+     padding: 0;
+ }
+ 
+ /*  CONTACT US */
+
+ .form h2, .google-map h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    line-height: 12px;
+    color: #55a8ae;
+ }
+
+ .google-map h2{
+     visibility: hidden;
+ }
+.container{
+    justify-items: auto;
+}
+
+.container .form .contact-form{
+    width: 601px;
+    height: 467px;
+    background: #55a8ae;
+    border: 2px solid #55a8ae;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 10px;
+    overflow: hidden;
+}
+
+.container .form .contact-form input[type="text"], .container .form .contact-form input[type="email"]{
+    width: 408px;
+    background: #fff;
+    border: 2px solid #55a8ae;
+    box-sizing: border-box;
+    padding: 14px 10px 14px 10px;
+    margin: 20px auto 30px;
+    font-size: 15px;
+    outline: none;
+    display: block;
+    transition: 0.5s;
+    transition-property: width;
+    position: inherit;
+}
+
+.container .form .contact-form input:hover{
+    width: 450px;
+}
+
+.container .form .contact-form input:focus{
+    width: 450px;
+}
+
+.container .form .contact-form textarea{
+    width: 408px;
+    font-family: 'Monteserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    border: 2px solid #55a8ae;
+    color: #4d4d4d;
+    margin: 20px auto 40px;
+    outline: none;
+    padding: 5px;
+    display: flex;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.container .contact-form button{
+    width: 150px;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px auto 10px;
+    border: 2px solid #55a8ae;
+    color: #4d4d4d;
+    padding: 14px 40px;
+    transition: 0.5s;
+    padding: 14px 40px;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    transition-property: background transform;
+}
+
+.container .contact-form button:hover, .container .contact-form button:active, .container .contact-form button:focus{
+    background:  #fff;
+    transform: scale(1.1);
+} 
