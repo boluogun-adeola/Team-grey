@@ -1,118 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font awesome cdn
-        I used font awesome for the icons
-    -->
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/60bdf815fa.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <title>T Hotel</title>
-  </head>
-  <body>
-    <!-- 
-        Facilities section by Fuad 
-        since I'm not in charge of the nav bar, to link to this section since its a single page application
-        in the href of the anchor tag  add the id of this section( i.e <a href = "#facilities">Facilities</a>)
-    -->
-    <div id="facilities">
-      <h2 class="section-headers">FACILITIES</h2>
-      <div class="facilities-contents-wrapper">
-        <div class="facilities-contents">
-          <i class="fas fa-cocktail fa-customize"></i>
-          <p>Bar</p>
-        </div>
-        <div class="facilities-contents">
-          <i class="fas fa-concierge-bell fa-customize"></i>
-          <p>Resturants</p>
-        </div>
-        <div class="facilities-contents">
-          <i class="fas fa-swimmer fa-customize"></i>
-          <p>Pool</p>
-        </div>
-        <div class="facilities-contents">
-          <i class="fas fa-spa fa-customize"></i>
-          <p>Spa/Wellness</p>
-        </div>
-        <div class="facilities-contents">
-          <i class="fas fa-film fa-customize"></i>
-          <p>Cinema</p>
-        </div>
-        <div class="facilities-contents">
-          <i class="fas fa-wifi fa-customize"></i>
-          <p>Wi-Fi</p>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7dc12ecddc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Hotel Landing Page</title>
+</head>
+<body>
+   
+
+ <div class="container reservationbox">
+    <section>
+     
+ <h1 class="reservation">RESERVATION</h1>
+ 
+ <div class="checkinrow flex-container">
+     
+      <div class="form-group box0"> 
+     <label for="date">Check in</label>
+   <input class="form-control" type="date" name="date" >
       </div>
+
+
+ 
+  <div class="form-group box1">    
+ <label for="number">Night</label>
+  <select class="form-control little" name="night" >
+  <option value="one">1</option>
+  <option value="two">2</option>
+  <option value="three">3</option>
+  <option value="four">4</option>
+  </select>
+  </div>
+
+
+
+
+  <div class="form-group box2"> 
+  <label for="date">Check Out</label>
+  <input class="form-control" type="date" name="date" >
+  </div>
+
+
+
+  <div class="form-group box3"> 
+  <label for="number">Adult</label>
+<select class="form-control little" name="" id="" form="">
+<option value="one">1</option>
+<option value="two">2</option>
+<option value="three">3</option>
+<option value="four">4</option>
+</select>
+</div>
+
+
+
+  <div class="form-group box4"> 
+<label for="number">Children</label>
+<select class="form-control little" name="" id="" form="">
+<option value="one">1</option>
+<option value="two">2</option>
+<option value="three">3</option>
+<option value="four">4</option>
+</select>
+</div>
+
+
+ <div class="box5"> <button type="button" class="btn btn-info btn-lg checkbutton">CHECK AVAILABILITY</button></div>
+</div>
+
+    </section>
+</div>
+
+
+
+</div>
+      <!-- PRICING SECTION -->
+      <div class="container roomandratesbox">
+      <section>
+
+    <h1 class="roomandrates">ROOMS AND RATES <span class="arrows"><i class="fas fa-arrow-circle-left fa-xs"></i> <i class="fas fa-arrow-circle-right fa-xs"></i></span></h1>
+    <p class="roomandratessubtext">All rooms are equipped with free Wi-fi, Large Smart Tv,<br>
+        21 international stations and a central air condition.
+    </p>
+    <div class="row bedspacebox">
+        <div class="col-md-6 col-sm-12">
+     <img class="responsive" src="Resources/unsplash-bed1.png" alt="Standard rooms - one king sized bed">
+    <h6 class="bedspace">Deluxe rooms - one king bed</h6>
+    <p class="price">$10,000</p>
+    <p class="checkdetails">Check Details <i class="fas fa-arrow-right rightarrow"></i></p>
+</div>
+
+<div class="col-md-6 col-sm-12">
+     <img class="responsive" width="535" height="344" src="Resources/unsplash-bed2.png" alt="Standard rooms - one king sized bed">
+    <h6 class="bedspace">Standard rooms - one king sized bed</h6>
+    <p class="price">$20,000</p>
+    <p class="checkdetails">Check Details <i class="fas fa-arrow-right rightarrow"></i></p>
     </div>
-    <!--
-        Testimonial section by Fuad 
-        to link to this secion from the nav bar , make the href of the anchor tag
-        equal to the id (#testimonials-wrapper)
-      -->
-    <div id="testimonials-wrapper">
-      <div class="slider-control">
-        <i class="fas fa-arrow-circle-left fa-lg controller"></i>
-        <i class="fas fa-arrow-circle-right fa-lg controller"></i>
-      </div>
-      <h2 class="section-headers">TESTIMONIALS</h2>
-      <div class="scroll-wrapper">
-        <div class="scroll">
-          <div class="slider-content">
-            <div>
-              <div id="profile-photo">
-                <img src="img/testimonial.jpg" alt="testimonial" />
-              </div>
-              <p>
-                T Hotel is a home away from home. it has a serene envinroment.
-                24 hour power supply, free Wi-Fi and the facilities are top
-                notch.
-              </p>
-              <p>
-                <em> Innocent Tamunoski,<strong>Traveller</strong></em>
-              </p>
-            </div>
-          </div>
-          <div class="slider-content">
-            <div>
-              <div id="profile-photo">
-                <img src="img/testimonial.jpg" alt="testimonial" />
-              </div>
-              <p>
-                T Hotel is a home away from home. it has a serene envinroment.
-                24 hour power supply, free Wi-Fi and the facilities are top
-                notch.
-              </p>
-              <p>
-                <em> Innocent Tamunoski,<strong>Traveller</strong></em>
-              </p>
-            </div>
-          </div>
-          <div class="slider-content">
-            <div>
-              <div id="profile-photo">
-                <img src="img/testimonial.jpg" alt="testimonial" />
-              </div>
-              <p>
-                T Hotel is a home away from home. it has a serene envinroment.
-                24 hour power supply, free Wi-Fi and the facilities are top
-                notch.
-              </p>
-              <p>
-                <em> Innocent Tamunoski,<strong>Traveller</strong></em>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="js/index.js"></script>
-  </body>
+</div>
+      </section>
+
+</div>
+<!-- OFFERS SECTION -->
+   
+<section>
+
+    <h1 class="facilities">FACILITIES</h1>
+
+    
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
